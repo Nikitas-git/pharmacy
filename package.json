@@ -14,15 +14,15 @@
 
     "body-parser": "^1.17.2",
 
-    "ejs": "^2.5.7",
+    "ejs": "^3.1.9",
 
     "express": "^4.15.4",
 
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^7.1.2",
 
     "express-session": "^1.15.5",
 
-    "express-validator": "^3.2.1",
+    "express-validator": "^7.0.1",
 
     "moment": "^2.18.1",
 
@@ -49,3 +49,4 @@
   "license": "Public"
 
 }
+
