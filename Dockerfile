@@ -4,7 +4,7 @@ FROM node:latest
 WORKDIR /pharmacy
 
 # Install npm packages
-COPY package-lock.json ./
+COPY package*.json .
 RUN npm --version
 RUN npm install --legacy-peer-deps
 
