@@ -3,13 +3,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: kaniko
+  name: pharmacy
 spec:
   containers:
-  - name: kaniko
+  - name: pharmacy
     image: gcr.io/kaniko-project/executor:debug
     args: ["--context=git://github.com/Nikitas-git/pharmacy.git",
-            "--destination=nikitadockermain/pharmacy-kaniko"]
+            "--destination=nikitadockermain/pharmacy_kaniko"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
@@ -21,3 +21,5 @@ spec:
         items:
           - key: .dockerconfigjson
             path: config.json
+
+
