@@ -9,7 +9,7 @@ spec:
   - name: pharmacy
     image: gcr.io/kaniko-project/executor:debug
     args: ["--context=git://github.com/Nikitas-git/pharmacy.git",
-           "--destination=http://15.207.55.249:8081/repository/kanikodemo/:latest"]
+           "--destination=http://15.207.55.249:8081/repository/kanikodemo:latest"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
