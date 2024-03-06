@@ -8,7 +8,7 @@ spec:
   containers:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
-    args: ["--context=git://github.com/Nikitas-git/kanikoaws.git",
+    args: ["--context=git://github.com/Nikitas-git/pharmacy.git",
             "--destination=nikitadockermain/pharmacy_aws"]
     volumeMounts:
       - name: kaniko-secret
