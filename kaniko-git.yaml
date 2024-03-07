@@ -9,7 +9,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
     args: ["--context=git://github.com/Nikitas-git/pharmacy.git",
-            "--destination=nikitadockermain/pharmacy_aws"]
+            "--destination=nikitadockermain/pharmacy"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
