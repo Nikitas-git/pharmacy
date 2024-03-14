@@ -6,7 +6,7 @@ WORKDIR /pharmacy
 # Install npm packages
 COPY package*.json .
 RUN npm --version
-RUN npm install --legacy-peer-deps
+RUN npm install
 
 # Bundle app source
 COPY . .
